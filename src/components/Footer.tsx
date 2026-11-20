@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import { SERVICE_PAGES, type ProfileData } from "@/content/site";
 import { SocialIcon } from "./icons";
 import { BrandMark, MapleLeaf } from "./BrandMark";
+import BookButton from "./BookButton";
 
 const COMPANY = [
   { href: "/work", label: "Our work" },
@@ -114,12 +115,18 @@ export default function Footer({ profile: PROFILE }: { profile: ProfileData }) {
               </span>
             </li>
           </ul>
-          <Link
-            href="/#contact"
-            className="mt-6 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim"
-          >
-            Get a quote
-          </Link>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <BookButton
+              bookingUrl={PROFILE.bookingUrl}
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim"
+            />
+            <Link
+              href="/#contact"
+              className="inline-flex rounded-full border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-accent hover:text-accent"
+            >
+              Get a quote
+            </Link>
+          </div>
         </div>
       </div>
 

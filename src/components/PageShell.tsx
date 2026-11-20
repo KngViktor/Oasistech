@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import { getSettings } from "@/lib/data";
 import SiteHeader from "./SiteHeader";
 import Footer from "./Footer";
+import BookButton from "./BookButton";
 
 /**
  * Chrome for the standalone /work and /services pages: a breadcrumb back to
@@ -15,8 +16,10 @@ export default async function PageShell({
   title,
   intro,
   breadcrumb,
+  hideCta = false,
   children,
 }: {
+  hideCta?: boolean;
   eyebrow: string;
   title: string;
   intro?: string;
@@ -56,21 +59,29 @@ export default async function PageShell({
 
           <div className="mt-12">{children}</div>
 
-          <div className="mt-16 rounded-2xl border border-accent/20 bg-accent/5 p-8 sm:p-10">
-            <h2 className="font-display text-2xl font-bold">
-              Have something like this to build?
-            </h2>
-            <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-              Tell us what you need it to do and who uses it, and you get a
-              fixed scope, a timeline and a price before anything starts.
-            </p>
-            <Link
-              href="/#contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim"
-            >
-              Start a project
-            </Link>
-          </div>
+          {!hideCta && (
+            <div className="mt-16 rounded-2xl border border-accent/20 bg-accent/5 p-8 sm:p-10">
+              <h2 className="font-display text-2xl font-bold">
+                Have something like this to build?
+              </h2>
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
+                Tell us what you need it to do and who uses it, and you get a
+                fixed scope, a timeline and a price before anything starts.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <BookButton
+                  bookingUrl={profile.bookingUrl}
+                  className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim"
+                />
+                <Link
+                  href="/#contact"
+                  className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold transition hover:border-accent hover:text-accent"
+                >
+                  Send a project brief
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </main>
       <Footer profile={profile} />

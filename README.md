@@ -9,6 +9,7 @@ The website for Oasis North Digital, a Canadian studio offering website developm
 - Old service URLs `/services/web-development-nigeria` and `/services/ai-product-features` redirect permanently to `/services/web-development-canada` and `/services/business-automation`.
 - Set `NEXT_PUBLIC_SITE_URL` to the new domain once it is live, and update the contact email, phone and social links in `/admin → General`.
 - Regenerate icons with `node scripts/gen-favicon.mjs`.
+- "Book an appointment" buttons open `/book`, a request form (weekday, 30-minute slot, Canadian time zone, video or phone) that posts to `/api/contact` and lands in the inbox as a *Consultation booking*. Confirm each one by email. To use a live scheduler instead, set `bookingUrl` in `PROFILE` (`src/content/site.ts`) to your Cal.com or Calendly link.
 
 ## Local development
 

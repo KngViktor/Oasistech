@@ -38,6 +38,9 @@ export const PROFILE = {
   headshot: "/portfolio/victor-headshot.jpg",
   founder: "Victor Abah",
   founderRole: "Founder & Lead Developer",
+  // Optional live scheduler (e.g. a Cal.com or Calendly link). When set, every
+  // "Book an appointment" button opens it; when empty, they open /book.
+  bookingUrl: "",
   logo: "", // optional brand logo (svg/png); falls back to the built-in mark when empty
 
   socials: [

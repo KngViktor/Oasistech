@@ -7,6 +7,7 @@ import { ArrowUpRight, ChevronDown, Mail, Menu, Phone, X } from "lucide-react";
 import { NAV_ITEMS, SERVICE_PAGES, type ProfileData } from "@/content/site";
 import { BrandMark, MapleLeaf } from "./BrandMark";
 import { SocialIcon } from "./icons";
+import BookButton from "./BookButton";
 
 // "Home" is the logo and "Contact" is the call to action, so the text links
 // cover the sections in between. Services gets a dropdown of its pages.
@@ -211,10 +212,23 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
           <div className="flex items-center gap-3">
             <a
               href={href("contact")}
+              className="hidden items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-semibold transition hover:border-accent hover:text-accent xl:inline-flex"
+            >
+              Get a quote
+            </a>
+            <BookButton
+              bookingUrl={profile.bookingUrl}
               className="hidden items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim sm:inline-flex"
             >
-              Get a quote <ArrowUpRight className="h-4 w-4" />
-            </a>
+              Book appointment
+            </BookButton>
+            <BookButton
+              bookingUrl={profile.bookingUrl}
+              icon={false}
+              className="flex h-10 items-center rounded-lg bg-accent px-3 text-sm font-semibold text-[#06150d] sm:hidden"
+            >
+              Book
+            </BookButton>
             <button
               ref={toggleRef}
               type="button"
@@ -283,10 +297,15 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
               </Link>
             ))}
           </div>
+          <BookButton
+            bookingUrl={profile.bookingUrl}
+            onClick={() => setMenuOpen(false)}
+            className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 font-semibold text-[#06150d]"
+          />
           <a
             href={href("contact")}
             onClick={() => setMenuOpen(false)}
-            className="mt-10 inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 font-semibold text-[#06150d]"
+            className="mt-3 inline-flex items-center justify-center gap-2 rounded-full border border-border px-6 py-3.5 font-semibold"
           >
             Get a quote <ArrowUpRight className="h-4 w-4" />
           </a>

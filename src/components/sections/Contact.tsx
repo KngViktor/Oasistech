@@ -14,6 +14,7 @@ import {
   type ProfileData,
   type ContactData,
 } from "@/content/site";
+import BookButton from "@/components/BookButton";
 
 type Status = "idle" | "sending" | "sent" | "error";
 
@@ -100,10 +101,21 @@ export default function Contact({
                 </li>
               </ol>
               <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-muted">
-                Based in {profile.location}. Remote collaboration worldwide.
-                <br />
-                Working timezone: WAT (UTC+1).
+                Serving businesses across {profile.location}. Calls booked in
+                your time zone, Pacific to Atlantic.
               </p>
+            </div>
+            <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-6">
+              <h3 className="font-display text-lg font-semibold">
+                Prefer to talk it through?
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">
+                Book a 30-minute video or phone call at a time that suits you.
+              </p>
+              <BookButton
+                bookingUrl={profile.bookingUrl}
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent px-5 py-3 text-sm font-semibold text-[#06150d] transition hover:bg-accent-dim"
+              />
             </div>
             <a
               href={`mailto:${profile.email}`}
