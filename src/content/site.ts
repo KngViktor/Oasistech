@@ -1,5 +1,5 @@
 /**
- * Central content layer for the Oasis North Digital website.
+ * Central content layer for the Oasis Orchard Stack website.
  *
  * Every public section reads from this file. The shape of each export mirrors
  * the planned Supabase tables (see supabase/schema.sql), so migrating to a
@@ -10,7 +10,7 @@
  */
 
 /** The studio's name, for static metadata that cannot wait on the CMS. */
-export const BRAND_NAME = "Oasis North Digital";
+export const BRAND_NAME = "Oasis Orchard Stack";
 
 export type NavItem = { id: string; label: string };
 
@@ -33,7 +33,7 @@ export const PROFILE = {
   phone: "+234 903 532 7537",
   phoneRaw: "2349035327537", // for tel: and wa.me links
   location: "Canada",
-  handle: "oasisnorthdigital",
+  handle: "oasisorchardstack",
   // Founder photo, shown with the About section.
   headshot: "/portfolio/victor-headshot.jpg",
   founder: "Victor Abah",
@@ -67,7 +67,7 @@ export const HERO = {
   headline:
     "Websites, apps and automation for Canadian businesses and individuals.",
   subtext:
-    "Oasis North Digital is a Canadian digital studio. Whether you run a company, work for yourself or have an idea you want to launch, we design and build fast websites, custom web and mobile apps, and automated workflows that take repetitive work off your plate, then stay on to support everything we launch.",
+    "Oasis Orchard Stack is a Canadian digital studio. Whether you run a company, work for yourself or have an idea you want to launch, we design and build fast websites, custom web and mobile apps, and automated workflows that take repetitive work off your plate, then stay on to support everything we launch.",
   stats: [
     { value: 6, suffix: "+", label: "Years of Experience" },
     { value: 20, suffix: "+", label: "Sites & Apps Shipped" },
@@ -77,7 +77,7 @@ export const HERO = {
 export const ABOUT = {
   eyebrow: "ABOUT THE STUDIO",
   headline: "A focused studio with senior hands on every project.",
-  body: "Oasis North Digital gives Canadian businesses, entrepreneurs and individuals a digital partner they can actually reach. The studio was founded by developer Victor Abah and builds on more than six years of shipping websites, business applications and the technical support that keeps them running, for clients in real estate, hospitality, healthcare, retail, logistics and SaaS. We explain decisions in plain language, agree scope, milestones and a fixed quote in Canadian dollars before work begins, and build with Canadian expectations in mind: privacy, accessibility, bilingual readiness and the payment methods your customers already use.",
+  body: "Oasis Orchard Stack gives Canadian businesses, entrepreneurs and individuals a digital partner they can actually reach. The studio was founded by developer Victor Abah and builds on more than six years of shipping websites, business applications and the technical support that keeps them running, for clients in real estate, hospitality, healthcare, retail, logistics and SaaS. We explain decisions in plain language, agree scope, milestones and a fixed quote in Canadian dollars before work begins, and build with Canadian expectations in mind: privacy, accessibility, bilingual readiness and the payment methods your customers already use.",
 };
 
 export type Experience = {
@@ -733,7 +733,7 @@ export type Faq = { question: string; answer: string };
 // Visible on the page AND emitted as FAQPage structured data in src/app/page.tsx.
 export const FAQS: Faq[] = [
   {
-    question: "What does Oasis North Digital do?",
+    question: "What does Oasis Orchard Stack do?",
     answer:
       "We are a Canadian digital studio that builds three things, for businesses and individuals alike: websites that turn visitors into customers, custom web and mobile apps, and automations that remove repetitive work from your day. Every project is quoted, built and supported by the same small team, so nothing gets lost between a sales rep and a developer you never meet.",
   },
@@ -802,7 +802,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: "website-development",
     service: "Website Development",
     title: "Websites designed around your customers",
-    metaTitle: "Website Development in Canada | Oasis North Digital",
+    metaTitle: "Website Development in Canada | Oasis Orchard Stack",
     metaDescription:
       "Canadian web design and development: fast, accessible websites in Next.js, WordPress and Framer with booking, ordering, quotes and e-commerce, plus launch and support.",
     intro:
@@ -829,7 +829,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: "app-development",
     service: "App Development",
     title: "Custom apps for businesses that have outgrown spreadsheets",
-    metaTitle: "Custom App Development in Canada | Oasis North Digital",
+    metaTitle: "Custom App Development in Canada | Oasis Orchard Stack",
     metaDescription:
       "Custom web and mobile app development for Canadian businesses: customer portals, booking, POS, dashboards and internal tools, built in React Native and Next.js.",
     intro:
@@ -856,7 +856,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     service: "Business Automation & AI",
     title: "Automation that gives your team its hours back",
     metaTitle:
-      "Business Automation & AI Services in Canada | Oasis North Digital",
+      "Business Automation & AI Services in Canada | Oasis Orchard Stack",
     metaDescription:
       "Workflow automation and AI for Canadian businesses: connect your CRM, forms, invoicing, bookings and email so routine work runs itself, with AI assistants grounded in your data.",
     intro:
@@ -883,9 +883,9 @@ export const SERVICE_PAGES: ServicePage[] = [
     title:
       "Web, app and automation services for Canadian businesses and individuals",
     metaTitle:
-      "Web Development, Apps & Automation in Canada | Oasis North Digital",
+      "Web Development, Apps & Automation in Canada | Oasis Orchard Stack",
     metaDescription:
-      "Oasis North Digital is a Canadian studio building websites, custom apps and automation for businesses and individuals, quoted in CAD and supported after launch.",
+      "Oasis Orchard Stack is a Canadian studio building websites, custom apps and automation for businesses and individuals, quoted in CAD and supported after launch.",
     intro:
       "Building for Canadian clients changes what gets built. Customers expect to pay the way they already do, sites often need to work in English and French, privacy and anti-spam rules shape every form and email list, and your team needs someone who answers during your business hours. We plan for all of it from the first call.",
     sells: [
@@ -909,7 +909,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: "tech-support",
     service: "Support & Hosting",
     title: "Support and hosting, from diagnosis to resolution",
-    metaTitle: "Website Support & Hosting in Canada | Oasis North Digital",
+    metaTitle: "Website Support & Hosting in Canada | Oasis Orchard Stack",
     metaDescription:
       "Ongoing website and app support for Canadian businesses: hosting, domains, email, broken integrations and failed deployments diagnosed, fixed and documented.",
     intro:
@@ -1109,22 +1109,22 @@ export const PROJECT_TYPES = [
 export const CONTACT = {
   headline: "Tell us what you're ready to build.",
   whatsappMessage:
-    "Hi Oasis North Digital, I saw your website and I'd like to talk about a project.",
+    "Hi Oasis Orchard Stack, I saw your website and I'd like to talk about a project.",
 };
 
 // SEO (search engines) + AEO (AI / answer engines) — editable in /admin.
 export const SEO = {
   metaTitle:
-    "Oasis North Digital | Web Development, Apps & Automation in Canada",
+    "Oasis Orchard Stack | Web Development, Apps & Automation in Canada",
   metaDescription:
-    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals. Fixed quotes in CAD and support after launch.",
+    "Oasis Orchard Stack is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals. Fixed quotes in CAD and support after launch.",
   keywords:
-    "Oasis North Digital, web development Canada, web design Canada, website developer Canada, custom app development Canada, mobile app developer Canada, business automation Canada, workflow automation agency, AI automation for small business, CRM integration, Next.js developer Canada, React Native developer Canada, small business website Canada, personal website Canada, portfolio website for freelancers, website for individuals, e-commerce website Canada, bilingual website English French, website support and hosting Canada, MVP development Canada",
+    "Oasis Orchard Stack, web development Canada, web design Canada, website developer Canada, custom app development Canada, mobile app developer Canada, business automation Canada, workflow automation agency, AI automation for small business, CRM integration, Next.js developer Canada, React Native developer Canada, small business website Canada, personal website Canada, portfolio website for freelancers, website for individuals, e-commerce website Canada, bilingual website English French, website support and hosting Canada, MVP development Canada",
   ogImage: "/og.png",
   // AEO: a concise, factual summary that feeds structured data so AI answer
   // engines (ChatGPT, Perplexity, Google AI) can describe the studio accurately.
   aiSummary:
-    "Oasis North Digital is a Canadian digital studio offering website development, custom web and mobile app development, and business automation, including AI assistants grounded in a company's own data. It works remotely with businesses, entrepreneurs and individuals across Canada, quotes fixed prices in Canadian dollars, and supports what it launches with hosting, maintenance and technical support. The studio was founded by developer Victor Abah, who brings 6+ years of building production websites and applications. Portfolio work includes a point-of-sale and inventory app (Xpel POS), a school management system (SchoolHub), a hospital website with appointment booking (Deem Hospital), a freight and logistics website (Jhflogistics), restaurant ordering (Everything Food), e-commerce storefronts (Ajusti, Lume), a multi-property hospitality group site with direct booking (Gateway Lodge Group) and SaaS product sites (FoxyAI, Leadloop, BizGrowth, Finbolt, NexaConnect). Technologies: Next.js, React, React Native, TypeScript, Supabase and Postgres, WordPress, Framer, APIs, webhooks and workflow automation.",
+    "Oasis Orchard Stack is a Canadian digital studio offering website development, custom web and mobile app development, and business automation, including AI assistants grounded in a company's own data. It works remotely with businesses, entrepreneurs and individuals across Canada, quotes fixed prices in Canadian dollars, and supports what it launches with hosting, maintenance and technical support. The studio was founded by developer Victor Abah, who brings 6+ years of building production websites and applications. Portfolio work includes a point-of-sale and inventory app (Xpel POS), a school management system (SchoolHub), a hospital website with appointment booking (Deem Hospital), a freight and logistics website (Jhflogistics), restaurant ordering (Everything Food), e-commerce storefronts (Ajusti, Lume), a multi-property hospitality group site with direct booking (Gateway Lodge Group) and SaaS product sites (FoxyAI, Leadloop, BizGrowth, Finbolt, NexaConnect). Technologies: Next.js, React, React Native, TypeScript, Supabase and Postgres, WordPress, Framer, APIs, webhooks and workflow automation.",
   // Site-ownership verification codes (paste from the respective consoles).
   googleVerification: "", // Google Search Console → google-site-verification
   bingVerification: "", // Bing Webmaster (powers ChatGPT/Copilot AEO) → msvalidate.01

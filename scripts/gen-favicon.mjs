@@ -6,9 +6,12 @@ import { fileURLToPath } from "node:url";
 const svg = `
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
   <rect width="64" height="64" rx="14" fill="#0b1116"/>
-  <path d="M32 7 L34.6 15.4 L43 18 L34.6 20.6 L32 29 L29.4 20.6 L21 18 L29.4 15.4 Z" fill="#2EE6C5"/>
-  <path d="M10 47 L25 30 L32 38 L39 30 L54 47" fill="none" stroke="#ECF2F5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M13 55 Q19.5 51 26 55 T39 55 T52 55" fill="none" stroke="#2EE6C5" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 30 V19" stroke="#2EE6C5" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M32 24.5 C26 24.5 21.5 20.5 21.5 14.5 C27.5 14.5 32 18.5 32 24.5 Z" fill="#2EE6C5"/>
+  <path d="M32 21.5 C32 15 36 10 43 10 C43 16.5 38.5 21.5 32 21.5 Z" fill="#2EE6C5"/>
+  <path d="M32 29 L48 37 L32 45 L16 37 Z" fill="#ECF2F5"/>
+  <path d="M16 43.5 L32 51.5 L48 43.5" fill="none" stroke="#ECF2F5" stroke-opacity=".8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16 49.5 L32 57.5 L48 49.5" fill="none" stroke="#2EE6C5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 `;
 

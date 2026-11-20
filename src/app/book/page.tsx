@@ -11,7 +11,7 @@ import { absoluteUrl, pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: `Book an Appointment | ${BRAND_NAME}`,
   description:
-    "Book a 30-minute video or phone consultation with Oasis North Digital about your website, app or business automation. Monday to Friday, in your Canadian time zone.",
+    "Book a 30-minute video or phone consultation with Oasis Orchard Stack about your website, app or business automation. Monday to Friday, in your Canadian time zone.",
   path: "/book",
 });
 

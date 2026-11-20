@@ -42,7 +42,7 @@ export function pageMetadata({
       title,
       description: summary,
       url,
-      siteName: "Oasis North Digital",
+      siteName: "Oasis Orchard Stack",
       locale: "en_CA",
       type,
       images: [preview],

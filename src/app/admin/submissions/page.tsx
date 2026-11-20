@@ -174,7 +174,7 @@ export default async function SubmissionsPage({
               </p>
               {isBooking(s) && (
                 <a
-                  href={`mailto:${s.email}?subject=${encodeURIComponent("Your consultation with Oasis North Digital")}`}
+                  href={`mailto:${s.email}?subject=${encodeURIComponent("Your consultation with Oasis Orchard Stack")}`}
                   className="mt-4 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-xs font-semibold text-[#06150d] transition hover:bg-accent-dim"
                 >
                   <Mail className="h-3.5 w-3.5" /> Reply to confirm

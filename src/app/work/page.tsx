@@ -12,7 +12,7 @@ export const revalidate = 300;
 export const metadata: Metadata = pageMetadata({
   title: `Websites & apps built end to end | ${BRAND_NAME}`,
   description:
-    "Websites and applications built end to end by Oasis North Digital: POS and inventory apps, school and hospital systems, logistics, restaurant, e-commerce and booking sites.",
+    "Websites and applications built end to end by Oasis Orchard Stack: POS and inventory apps, school and hospital systems, logistics, restaurant, e-commerce and booking sites.",
   path: "/work",
 });
 

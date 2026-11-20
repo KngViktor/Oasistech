@@ -1,5 +1,5 @@
 /**
- * Oasis North Digital mark: a north star above a peak, over still water.
+ * Oasis Orchard Stack mark: a sprout growing from a stack of layers.
  * Inline SVG so it inherits the theme accent and needs no network request.
  */
 export function BrandMark({
@@ -29,27 +29,39 @@ export function BrandMark({
         strokeOpacity="0.35"
         strokeWidth="1.5"
       />
-      {/* North star */}
+      {/* Sprout: the orchard */}
       <path
-        d="M32 9 L34.2 15.8 L41 18 L34.2 20.2 L32 27 L29.8 20.2 L23 18 L29.8 15.8 Z"
+        d="M32 30 V20"
+        stroke="var(--accent)"
+        strokeWidth="2.6"
+        strokeLinecap="round"
+      />
+      <path
+        d="M32 24.5 C26.5 24.5 22.5 21 22.5 15.5 C28 15.5 32 19 32 24.5 Z"
         fill="var(--accent)"
       />
-      {/* Peak */}
       <path
-        d="M12 46 L26 30 L32 37 L38 30 L52 46"
+        d="M32 21.5 C32 15.5 35.8 11 42 11 C42 17 37.8 21.5 32 21.5 Z"
+        fill="var(--accent)"
+      />
+      {/* Layers: the stack */}
+      <path d="M32 29 L47 36.5 L32 44 L17 36.5 Z" fill="var(--text)" />
+      <path
+        d="M17 42.5 L32 50 L47 42.5"
         fill="none"
         stroke="var(--text)"
-        strokeWidth="3.5"
+        strokeOpacity="0.75"
+        strokeWidth="3"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      {/* Water */}
       <path
-        d="M14 53 Q20 49.5 26 53 T38 53 T50 53"
+        d="M17 48.5 L32 56 L47 48.5"
         fill="none"
         stroke="var(--accent)"
         strokeWidth="3"
         strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

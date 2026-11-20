@@ -23,11 +23,11 @@ const siteUrl = getSiteUrl();
 // these values only apply if that fetch fails or on non-homepage routes.
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
+  title: "Oasis Orchard Stack | Web Development, Apps & Automation in Canada",
   description:
-    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals.",
+    "Oasis Orchard Stack is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals.",
   keywords: [
-    "Oasis North Digital",
+    "Oasis Orchard Stack",
     "web development Canada",
     "app development Canada",
     "business automation Canada",
@@ -35,21 +35,21 @@ export const metadata: Metadata = {
     "personal website Canada",
     "website support and hosting",
   ],
-  authors: [{ name: "Oasis North Digital" }],
+  authors: [{ name: "Oasis Orchard Stack" }],
   // llms.txt is supplementary; it is not an alternate representation of every page.
   openGraph: {
-    title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
+    title: "Oasis Orchard Stack | Web Development, Apps & Automation in Canada",
     description:
       "Websites, custom apps and automation for Canadian businesses and individuals, replacing the manual workflows and outdated sites that quietly cost them customers.",
     url: siteUrl,
-    siteName: "Oasis North Digital",
+    siteName: "Oasis Orchard Stack",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
     locale: "en_CA",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
+    title: "Oasis Orchard Stack | Web Development, Apps & Automation in Canada",
     description:
       "Websites, custom apps and automation for Canadian businesses and individuals.",
     images: ["/og.png"],

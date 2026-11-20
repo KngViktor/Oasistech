@@ -1,11 +1,11 @@
-# Oasis North Digital
+# Oasis Orchard Stack
 
-The website for Oasis North Digital, a Canadian studio offering website development, custom web and mobile apps, and business automation. Built with Next.js 16, React 19 and Tailwind CSS 4. The public site includes selected work, a filterable project archive, individual project pages, services, client feedback and a project enquiry form. The optional Supabase CMS manages the content and enquiry inbox.
+The website for Oasis Orchard Stack, a Canadian studio offering website development, custom web and mobile apps, and business automation. Built with Next.js 16, React 19 and Tailwind CSS 4. The public site includes selected work, a filterable project archive, individual project pages, services, client feedback and a project enquiry form. The optional Supabase CMS manages the content and enquiry inbox.
 
 ## Rebrand notes
 
 - Brand copy lives in `src/content/site.ts` (`BRAND_NAME`, `PROFILE`, `HERO`, `ABOUT`, `SERVICES`, `SERVICE_PAGES`, `FAQS`, `SEO`). The portfolio is unchanged.
-- For a site already backed by Supabase, run `supabase/migrations/2026-11-20-oasis-north-rebrand.sql` so the CMS copy matches. It keeps the stored email, phone, socials and portfolio.
+- For a site already backed by Supabase, run the latest migration, `supabase/migrations/2026-11-22-oasis-orchard-stack.sql`, so the CMS copy matches. It keeps the stored email, phone, socials and portfolio.
 - Old service URLs `/services/web-development-nigeria` and `/services/ai-product-features` redirect permanently to `/services/web-development-canada` and `/services/business-automation`.
 - Set `NEXT_PUBLIC_SITE_URL` to the new domain once it is live, and update the contact email, phone and social links in `/admin → General`.
 - Regenerate icons with `node scripts/gen-favicon.mjs`.

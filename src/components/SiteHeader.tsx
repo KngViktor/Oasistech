@@ -99,9 +99,9 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
     <span className="flex items-center gap-2.5">
       <BrandMark className="h-9 w-9 shrink-0" />
       <span className="font-display text-[1.05rem] font-bold leading-none tracking-tight">
-        Oasis North
+        Oasis Orchard
         <span className="block text-[0.65rem] font-semibold uppercase tracking-[0.28em] text-accent">
-          Digital
+          Stack
         </span>
       </span>
     </span>

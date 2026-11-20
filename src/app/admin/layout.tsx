@@ -7,7 +7,7 @@ import { signOut } from "./actions";
 import AdminNav, { type AdminLink } from "./AdminNav";
 
 export const metadata = {
-  title: "Admin | Oasis North Digital",
+  title: "Admin | Oasis Orchard Stack",
   robots: { index: false, follow: false },
 };
 
@@ -69,7 +69,7 @@ export default async function AdminLayout({
           <Link href="/admin" className="flex items-center gap-2.5">
             <BrandMark className="h-8 w-8" />
             <span className="font-display font-bold leading-none">
-              Oasis North
+              Oasis Orchard
               <span className="block text-[10px] font-semibold uppercase tracking-[0.25em] text-accent">
                 Admin
               </span>

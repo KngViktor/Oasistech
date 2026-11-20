@@ -15,7 +15,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Service pages retired in the Oasis North Digital rebrand.
+  // Service pages retired in the Oasis Orchard Stack rebrand.
   async redirects() {
     return [
       {
