@@ -1,5 +1,4 @@
-import Sidebar from "@/components/Sidebar";
-import ScrollNav from "@/components/ScrollNav";
+import SiteHeader from "@/components/SiteHeader";
 import Footer from "@/components/Footer";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import Hero from "@/components/sections/Hero";
@@ -97,10 +96,9 @@ export default async function Home() {
   return (
     <>
       <JsonLd value={jsonLd} />
-      <Sidebar profile={profile} />
-      <ScrollNav profile={profile} />
-      <main id="main-content" className="lg:ml-[280px] lg:pr-20">
-        <div className="pt-[73px] lg:pt-0">
+      <SiteHeader profile={profile} />
+      <main id="main-content">
+        <div>
           <Hero
             hero={hero}
             profile={profile}

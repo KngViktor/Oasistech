@@ -7,6 +7,8 @@ import { getPosts, getSettings } from "@/lib/data";
 import { getSiteUrl } from "@/lib/site-url";
 import { slugify } from "@/lib/slug";
 import PostBody from "@/components/PostBody";
+import SiteHeader from "@/components/SiteHeader";
+import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { absoluteUrl, pageMetadata, validPublishedDate } from "@/lib/seo";
 import { BRAND_NAME } from "@/content/site";
@@ -105,6 +107,7 @@ export default async function PostPage({
   return (
     <>
       <JsonLd value={jsonLd} />
+      <SiteHeader profile={profile} />
       <main
         id="main-content"
         className="min-h-screen px-6 py-14 sm:px-10 lg:py-20"
@@ -116,12 +119,6 @@ export default async function PostPage({
               className="inline-flex items-center gap-2 text-sm text-muted transition hover:text-accent"
             >
               <ArrowLeft className="h-4 w-4" /> All posts
-            </Link>
-            <Link
-              href="/#contact"
-              className="inline-flex items-center rounded-full border border-border px-4 py-2.5 text-xs font-semibold transition hover:border-accent hover:text-accent"
-            >
-              Start a project ↗
             </Link>
           </div>
 
@@ -215,6 +212,7 @@ export default async function PostPage({
           </div>
         </div>
       </main>
+      <Footer profile={profile} />
     </>
   );
 }

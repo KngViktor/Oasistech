@@ -55,11 +55,14 @@ export function BrandMark({
   );
 }
 
-/** Text wordmark used where a compact brand label fits better than the mark. */
-export function Wordmark({ className }: { className?: string }) {
+/** Simplified maple leaf, drawn symmetric about the centre line. */
+export function MapleLeaf({ className }: { className?: string }) {
   return (
-    <span className={className}>
-      Oasis North<span className="text-accent">.</span>
-    </span>
+    <svg viewBox="0 0 24 24" className={className} aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M12 1.5 L13.5 4.4 L15.3 3.5 L14.7 8.1 L17.1 5.7 L17.8 7.3 L20.6 6.8 L19.7 9.8 L21.2 10.6 L17 14.2 L17.5 15.9 L12.6 15.2 L12.7 21.5 L11.3 21.5 L11.4 15.2 L6.5 15.9 L7 14.2 L2.8 10.6 L4.3 9.8 L3.4 6.8 L6.2 7.3 L6.9 5.7 L9.3 8.1 L8.7 3.5 L10.5 4.4 Z"
+      />
+    </svg>
   );
 }
