@@ -23,7 +23,7 @@ export async function GET() {
   const lines = [
     `# ${profile.name}`,
     "",
-    `> ${profile.role} serving small and mid-sized businesses across ${profile.location}. Founded by ${profile.founder}.`,
+    `> ${profile.role} serving businesses and individuals across ${profile.location}. Founded by ${profile.founder}.`,
     "",
     `Contact: ${profile.email} · ${profile.phone} · ${site}`,
     "",

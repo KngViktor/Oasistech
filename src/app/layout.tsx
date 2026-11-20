@@ -25,13 +25,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
   description:
-    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and business automation for small and mid-sized businesses.",
+    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals.",
   keywords: [
     "Oasis North Digital",
     "web development Canada",
     "app development Canada",
     "business automation Canada",
     "AI automation for small business",
+    "personal website Canada",
     "website support and hosting",
   ],
   authors: [{ name: "Oasis North Digital" }],
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
     description:
-      "Websites, custom apps and automation for Canadian businesses, replacing the manual workflows and outdated sites that quietly cost them customers.",
+      "Websites, custom apps and automation for Canadian businesses and individuals, replacing the manual workflows and outdated sites that quietly cost them customers.",
     url: siteUrl,
     siteName: "Oasis North Digital",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Oasis North Digital | Web Development, Apps & Automation in Canada",
     description:
-      "Websites, custom apps and business automation for Canadian businesses.",
+      "Websites, custom apps and automation for Canadian businesses and individuals.",
     images: ["/og.png"],
   },
 };

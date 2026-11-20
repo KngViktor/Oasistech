@@ -16,6 +16,7 @@ export const MEETING_FORMATS = ["Video call", "Phone call"];
 
 export const BOOKING_TOPICS = [
   "Website",
+  "Personal website or portfolio",
   "Web or mobile app",
   "Business automation",
   "AI assistant or feature",

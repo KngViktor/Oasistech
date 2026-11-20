@@ -114,7 +114,8 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-2 sm:px-10 lg:px-12 box-content">
           <p className="flex items-center gap-2">
             <MapleLeaf className="h-3.5 w-3.5 text-[#ef4444]" />
-            Proudly Canadian · Serving businesses coast to coast · Quotes in CAD
+            Proudly Canadian · For businesses & individuals, coast to coast ·
+            Quotes in CAD
           </p>
           <div className="flex items-center gap-5">
             <a
@@ -178,7 +179,7 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
                         >
                           <span className="block text-sm font-semibold">
                             {s.service === "Canada"
-                              ? "For Canadian businesses"
+                              ? "Serving all of Canada"
                               : s.service}
                           </span>
                           <span className="mt-0.5 block text-xs leading-relaxed text-muted">
@@ -293,7 +294,7 @@ export default function SiteHeader({ profile }: { profile: ProfileData }) {
                 onClick={() => setMenuOpen(false)}
                 className="text-base text-muted transition hover:text-accent"
               >
-                {s.service === "Canada" ? "For Canadian businesses" : s.service}
+                {s.service === "Canada" ? "Serving all of Canada" : s.service}
               </Link>
             ))}
           </div>

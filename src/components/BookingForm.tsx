@@ -321,7 +321,7 @@ export default function BookingForm({
           name="message"
           rows={4}
           maxLength={3000}
-          placeholder="Your business, what you'd like to build or automate, and any deadlines."
+          placeholder="Your business or project, what you'd like to build or automate, and any deadlines."
           className={field}
         />
       </label>

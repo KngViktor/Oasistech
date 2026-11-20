@@ -26,8 +26,8 @@ export default function Footer({ profile: PROFILE }: { profile: ProfileData }) {
             </span>
           </Link>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted">
-            Websites, custom apps and business automation for small and
-            mid-sized businesses across Canada.
+            Websites, custom apps and automation for businesses and individuals
+            across Canada.
           </p>
           <div className="mt-6 flex gap-3">
             {PROFILE.socials.map((s) => (
@@ -58,9 +58,7 @@ export default function Footer({ profile: PROFILE }: { profile: ProfileData }) {
                   href={`/services/${s.slug}`}
                   className="text-muted transition hover:text-accent"
                 >
-                  {s.service === "Canada"
-                    ? "For Canadian businesses"
-                    : s.service}
+                  {s.service === "Canada" ? "Serving all of Canada" : s.service}
                 </Link>
               </li>
             ))}

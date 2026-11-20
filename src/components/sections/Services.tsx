@@ -27,9 +27,9 @@ export default function Services({
       title="Websites, apps and automation, built to grow with you."
     >
       <p className="mb-9 max-w-2xl text-base leading-relaxed text-muted">
-        Whether you need a stronger first impression, a better way to run the
-        business or fewer hours lost to manual work, we start with the job the
-        technology needs to do.
+        Whether you&apos;re a business or an individual, and need a stronger first
+        impression, a better way to work or fewer hours lost to manual tasks, we
+        start with the job the technology needs to do.
       </p>
       <div className="grid gap-5 sm:grid-cols-2">
         {[...SERVICES]

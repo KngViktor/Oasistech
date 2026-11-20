@@ -64,9 +64,10 @@ export const PROFILE = {
 
 export const HERO = {
   eyebrow: "WEB · APPS · AUTOMATION — CANADA",
-  headline: "Websites, apps and automation that help Canadian businesses grow.",
+  headline:
+    "Websites, apps and automation for Canadian businesses and individuals.",
   subtext:
-    "Oasis North Digital is a Canadian digital studio. We design and build fast websites, custom web and mobile apps, and automated workflows that take repetitive work off your team, then stay on to support everything we launch.",
+    "Oasis North Digital is a Canadian digital studio. Whether you run a company, work for yourself or have an idea you want to launch, we design and build fast websites, custom web and mobile apps, and automated workflows that take repetitive work off your plate, then stay on to support everything we launch.",
   stats: [
     { value: 6, suffix: "+", label: "Years of Experience" },
     { value: 20, suffix: "+", label: "Sites & Apps Shipped" },
@@ -76,7 +77,7 @@ export const HERO = {
 export const ABOUT = {
   eyebrow: "ABOUT THE STUDIO",
   headline: "A focused studio with senior hands on every project.",
-  body: "Oasis North Digital gives Canadian small and mid-sized businesses a digital partner they can actually reach. The studio was founded by developer Victor Abah and builds on more than six years of shipping websites, business applications and the technical support that keeps them running, for clients in real estate, hospitality, healthcare, retail, logistics and SaaS. We explain decisions in plain language, agree scope, milestones and a fixed quote in Canadian dollars before work begins, and build with Canadian expectations in mind: privacy, accessibility, bilingual readiness and the payment methods your customers already use.",
+  body: "Oasis North Digital gives Canadian businesses, entrepreneurs and individuals a digital partner they can actually reach. The studio was founded by developer Victor Abah and builds on more than six years of shipping websites, business applications and the technical support that keeps them running, for clients in real estate, hospitality, healthcare, retail, logistics and SaaS. We explain decisions in plain language, agree scope, milestones and a fixed quote in Canadian dollars before work begins, and build with Canadian expectations in mind: privacy, accessibility, bilingual readiness and the payment methods your customers already use.",
 };
 
 export type Experience = {
@@ -167,7 +168,7 @@ export const SERVICES: Service[] = [
   {
     title: "Website Development",
     description:
-      "Fast, accessible websites that explain your offer and turn visitors into enquiries, bookings or sales. Design, development, content management, search setup and launch, with English and French versions when you need them.",
+      "Fast, accessible websites for businesses and personal brands that explain your offer and turn visitors into enquiries, bookings or sales. Design, development, content management, search setup and launch, with English and French versions when you need them.",
     icon: "code",
   },
   {
@@ -734,10 +735,15 @@ export const FAQS: Faq[] = [
   {
     question: "What does Oasis North Digital do?",
     answer:
-      "We are a Canadian digital studio that builds three things: websites that turn visitors into customers, custom web and mobile apps, and automations that remove repetitive work from your team's day. Every project is quoted, built and supported by the same small team, so nothing gets lost between a sales rep and a developer you never meet.",
+      "We are a Canadian digital studio that builds three things, for businesses and individuals alike: websites that turn visitors into customers, custom web and mobile apps, and automations that remove repetitive work from your day. Every project is quoted, built and supported by the same small team, so nothing gets lost between a sales rep and a developer you never meet.",
   },
   {
-    question: "Do you work with businesses across Canada?",
+    question: "Do you work with individuals, or only businesses?",
+    answer:
+      "Both. Alongside companies, we work with freelancers, consultants, creators, job seekers and people with an idea they want to test: a personal or portfolio website, an online shop for a side business, a booking page, a first version of an app, or automating the admin of working for yourself. Projects are scoped to fit, so you only pay for what you actually need.",
+  },
+  {
+    question: "Do you work with clients across Canada?",
     answer:
       "Yes. We work remotely with clients in every province and territory, from British Columbia to the Atlantic provinces. Calls are booked in your time zone, quotes and invoices are in Canadian dollars, and progress is visible in a shared project board between meetings.",
   },
@@ -802,6 +808,7 @@ export const SERVICE_PAGES: ServicePage[] = [
     intro:
       "Most business websites lose the visitor at the same point: the person wants to see a price, check availability, book a time or ask a specific question, and the site sends them to a phone number instead. We build the site that answers them on the page, then keep it fast, secure and online afterwards.",
     sells: [
+      "Individuals: personal brands, portfolios, freelancers, coaches and creators",
       "Service businesses: clinics, trades, consultants and studios taking bookings online",
       "Restaurants and retail: menus, ordering, pickup and delivery",
       "Hospitality and property: galleries, availability and direct booking",
@@ -832,7 +839,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       "Booking, scheduling and membership apps",
       "Point-of-sale and inventory apps for retail",
       "Internal dashboards and admin panels for teams outgrowing spreadsheets",
-      "MVPs for founders who need a working product in front of customers",
+      "MVPs for founders and individuals who need a working product in front of customers",
     ],
     deliverables: [
       "Mobile app in React Native, ready for the App Store and Google Play",
@@ -848,7 +855,8 @@ export const SERVICE_PAGES: ServicePage[] = [
     slug: "business-automation",
     service: "Business Automation & AI",
     title: "Automation that gives your team its hours back",
-    metaTitle: "Business Automation & AI Services in Canada | Oasis North Digital",
+    metaTitle:
+      "Business Automation & AI Services in Canada | Oasis North Digital",
     metaDescription:
       "Workflow automation and AI for Canadian businesses: connect your CRM, forms, invoicing, bookings and email so routine work runs itself, with AI assistants grounded in your data.",
     intro:
@@ -858,6 +866,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       "Quotes, invoices and payment reminders generated and sent automatically",
       "Booking confirmations, reminders and follow-ups",
       "Reports and dashboards that update themselves",
+      "Freelancers and solo operators who lose evenings to invoices, scheduling and follow-ups",
       "AI assistants that answer customer and staff questions from your own policies and records",
     ],
     deliverables: [
@@ -871,18 +880,21 @@ export const SERVICE_PAGES: ServicePage[] = [
   {
     slug: "web-development-canada",
     service: "Canada",
-    title: "Web, app and automation services for Canadian businesses",
-    metaTitle: "Web Development, Apps & Automation in Canada | Oasis North Digital",
+    title:
+      "Web, app and automation services for Canadian businesses and individuals",
+    metaTitle:
+      "Web Development, Apps & Automation in Canada | Oasis North Digital",
     metaDescription:
-      "Oasis North Digital is a Canadian studio building websites, custom apps and business automation for small and mid-sized businesses, quoted in CAD and supported after launch.",
+      "Oasis North Digital is a Canadian studio building websites, custom apps and automation for businesses and individuals, quoted in CAD and supported after launch.",
     intro:
-      "Building for Canadian businesses changes what gets built. Customers expect to pay the way they already do, sites often need to work in English and French, privacy and anti-spam rules shape every form and email list, and your team needs someone who answers during your business hours. We plan for all of it from the first call.",
+      "Building for Canadian clients changes what gets built. Customers expect to pay the way they already do, sites often need to work in English and French, privacy and anti-spam rules shape every form and email list, and your team needs someone who answers during your business hours. We plan for all of it from the first call.",
     sells: [
       "Local service businesses that want more bookings and fewer phone calls",
       "Retailers and restaurants selling online and in person",
       "Clinics, studios and professional firms running on manual admin",
       "Growing teams whose tools no longer talk to each other",
       "Founders launching a new product or MVP",
+      "Individuals building a personal brand, portfolio or side business",
     ],
     deliverables: [
       "Quotes and invoices in Canadian dollars, with a fixed scope before work starts",
@@ -904,7 +916,7 @@ export const SERVICE_PAGES: ServicePage[] = [
       "Failed deployments, a form that stopped sending, email that will not authenticate, a site nobody can log in to since the last developer left. We isolate the cause, fix it, and write down the fix so the same issue does not come back next week.",
     sells: [
       "Sites and apps that started failing after a change nobody can identify",
-      "Businesses with no in-house technical person and a stack they inherited",
+      "Businesses and individuals with no technical person to call, and a setup they inherited",
       "Teams that need hosting, domains, email and integrations kept running",
       "Handover work: taking over a project from a developer who has gone quiet",
     ],
@@ -1086,6 +1098,7 @@ export const PRICING: PricingTier[] = [
 
 export const PROJECT_TYPES = [
   "Website",
+  "Personal website or portfolio",
   "Web or mobile app",
   "Business automation",
   "AI assistant or feature",
@@ -1101,16 +1114,17 @@ export const CONTACT = {
 
 // SEO (search engines) + AEO (AI / answer engines) — editable in /admin.
 export const SEO = {
-  metaTitle: "Oasis North Digital | Web Development, Apps & Automation in Canada",
+  metaTitle:
+    "Oasis North Digital | Web Development, Apps & Automation in Canada",
   metaDescription:
-    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and business automation for small and mid-sized businesses. Fixed quotes in CAD and support after launch.",
+    "Oasis North Digital is a Canadian studio building fast websites, custom web and mobile apps, and automation for businesses and individuals. Fixed quotes in CAD and support after launch.",
   keywords:
-    "Oasis North Digital, web development Canada, web design Canada, website developer Canada, custom app development Canada, mobile app developer Canada, business automation Canada, workflow automation agency, AI automation for small business, CRM integration, Next.js developer Canada, React Native developer Canada, small business website Canada, e-commerce website Canada, bilingual website English French, website support and hosting Canada, MVP development Canada",
+    "Oasis North Digital, web development Canada, web design Canada, website developer Canada, custom app development Canada, mobile app developer Canada, business automation Canada, workflow automation agency, AI automation for small business, CRM integration, Next.js developer Canada, React Native developer Canada, small business website Canada, personal website Canada, portfolio website for freelancers, website for individuals, e-commerce website Canada, bilingual website English French, website support and hosting Canada, MVP development Canada",
   ogImage: "/og.png",
   // AEO: a concise, factual summary that feeds structured data so AI answer
   // engines (ChatGPT, Perplexity, Google AI) can describe the studio accurately.
   aiSummary:
-    "Oasis North Digital is a Canadian digital studio offering website development, custom web and mobile app development, and business automation, including AI assistants grounded in a company's own data. It works remotely with small and mid-sized businesses across Canada, quotes fixed prices in Canadian dollars, and supports what it launches with hosting, maintenance and technical support. The studio was founded by developer Victor Abah, who brings 6+ years of building production websites and applications. Portfolio work includes a point-of-sale and inventory app (Xpel POS), a school management system (SchoolHub), a hospital website with appointment booking (Deem Hospital), a freight and logistics website (Jhflogistics), restaurant ordering (Everything Food), e-commerce storefronts (Ajusti, Lume), a multi-property hospitality group site with direct booking (Gateway Lodge Group) and SaaS product sites (FoxyAI, Leadloop, BizGrowth, Finbolt, NexaConnect). Technologies: Next.js, React, React Native, TypeScript, Supabase and Postgres, WordPress, Framer, APIs, webhooks and workflow automation.",
+    "Oasis North Digital is a Canadian digital studio offering website development, custom web and mobile app development, and business automation, including AI assistants grounded in a company's own data. It works remotely with businesses, entrepreneurs and individuals across Canada, quotes fixed prices in Canadian dollars, and supports what it launches with hosting, maintenance and technical support. The studio was founded by developer Victor Abah, who brings 6+ years of building production websites and applications. Portfolio work includes a point-of-sale and inventory app (Xpel POS), a school management system (SchoolHub), a hospital website with appointment booking (Deem Hospital), a freight and logistics website (Jhflogistics), restaurant ordering (Everything Food), e-commerce storefronts (Ajusti, Lume), a multi-property hospitality group site with direct booking (Gateway Lodge Group) and SaaS product sites (FoxyAI, Leadloop, BizGrowth, Finbolt, NexaConnect). Technologies: Next.js, React, React Native, TypeScript, Supabase and Postgres, WordPress, Framer, APIs, webhooks and workflow automation.",
   // Site-ownership verification codes (paste from the respective consoles).
   googleVerification: "", // Google Search Console → google-site-verification
   bingVerification: "", // Bing Webmaster (powers ChatGPT/Copilot AEO) → msvalidate.01

@@ -87,7 +87,7 @@ export default async function BookPage({
           <p className="flex items-start gap-3 rounded-2xl border border-border p-5 text-sm leading-relaxed text-muted">
             <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
             Appointments run Monday to Friday, 9:00 AM to 5:00 PM in your local
-            time, for businesses anywhere in Canada.
+            time, for businesses and individuals anywhere in Canada.
           </p>
         </aside>
         <BookingForm

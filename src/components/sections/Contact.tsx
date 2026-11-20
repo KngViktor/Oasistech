@@ -77,8 +77,8 @@ export default function Contact({
           {contact.headline}
         </h2>
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted">
-          Share a little about your business, what you need and the timing you
-          have in mind. We can work out the right next step together.
+          Share a little about your business or idea, what you need and the
+          timing you have in mind. We can work out the right next step together.
         </p>
         <div className="mt-10 grid items-start gap-10 xl:grid-cols-[0.85fr_1.15fr]">
           <div>
@@ -101,8 +101,8 @@ export default function Contact({
                 </li>
               </ol>
               <p className="mt-6 border-t border-border pt-5 text-xs leading-relaxed text-muted">
-                Serving businesses across {profile.location}. Calls booked in
-                your time zone, Pacific to Atlantic.
+                Serving businesses and individuals across {profile.location}.
+                Calls booked in your time zone, Pacific to Atlantic.
               </p>
             </div>
             <div className="mt-5 rounded-2xl border border-accent/30 bg-accent/5 p-6">

@@ -8,7 +8,7 @@ import PageShell from "@/components/PageShell";
 export const metadata: Metadata = pageMetadata({
   title: `Services | Web development, apps & automation in Canada | ${BRAND_NAME}`,
   description:
-    "Website development, custom app development, business automation and AI, and ongoing support & hosting for small and mid-sized businesses across Canada.",
+    "Website development, custom app development, business automation and AI, and ongoing support & hosting for businesses and individuals across Canada.",
   path: "/services",
 });
 
