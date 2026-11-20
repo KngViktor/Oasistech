@@ -4,9 +4,11 @@ import { writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 const svg = `
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="96" fill="#111111"/>
-  <text x="256" y="300" font-family="Arial, Helvetica, sans-serif" font-size="300" font-weight="800" fill="#28E98C" text-anchor="middle">V</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0b1116"/>
+  <path d="M32 7 L34.6 15.4 L43 18 L34.6 20.6 L32 29 L29.4 20.6 L21 18 L29.4 15.4 Z" fill="#2EE6C5"/>
+  <path d="M10 47 L25 30 L32 38 L39 30 L54 47" fill="none" stroke="#ECF2F5" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M13 55 Q19.5 51 26 55 T39 55 T52 55" fill="none" stroke="#2EE6C5" stroke-width="4" stroke-linecap="round"/>
 </svg>
 `;
 

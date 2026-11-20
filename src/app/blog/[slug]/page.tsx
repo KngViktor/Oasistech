@@ -9,6 +9,7 @@ import { slugify } from "@/lib/slug";
 import PostBody from "@/components/PostBody";
 import JsonLd from "@/components/JsonLd";
 import { absoluteUrl, pageMetadata, validPublishedDate } from "@/lib/seo";
+import { BRAND_NAME } from "@/content/site";
 
 export const revalidate = 300;
 
@@ -28,7 +29,7 @@ export async function generateMetadata({
   if (!found) return { title: "Post not found" };
   const { post } = found;
   return pageMetadata({
-    title: `${post.title} | Victor Abah`,
+    title: `${post.title} | ${BRAND_NAME}`,
     description: post.excerpt,
     path: `/blog/${slug}`,
     image: post.cover,
@@ -67,14 +68,14 @@ export default async function PostPage({
         datePublished: validPublishedDate(post.publishedAt),
         keywords: post.tags.join(", ") || undefined,
         author: {
-          "@type": "Person",
-          "@id": `${site}#victor`,
+          "@type": "Organization",
+          "@id": `${site}#organization`,
           name: profile.name,
           url: site,
         },
         publisher: {
-          "@type": "Person",
-          "@id": `${site}#victor`,
+          "@type": "Organization",
+          "@id": `${site}#organization`,
           name: profile.name,
           url: site,
         },

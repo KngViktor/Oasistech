@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { NAV_ITEMS, type ProfileData } from "@/content/site";
 import { SocialIcon, NavIcon } from "./icons";
+import { BrandMark, Wordmark } from "./BrandMark";
 
 export default function ScrollNav({
   profile: PROFILE,
@@ -88,9 +89,10 @@ export default function ScrollNav({
               className="h-8 w-auto max-w-[150px] object-contain"
             />
           ) : (
-            <>
-              Victor<span className="text-accent">.</span>
-            </>
+            <span className="flex items-center gap-2">
+              <BrandMark className="h-8 w-8" />
+              <Wordmark />
+            </span>
           )}
         </a>
         <button

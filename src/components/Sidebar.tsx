@@ -1,7 +1,7 @@
-import Image from "next/image";
 import { MapPin, Mail, Phone } from "lucide-react";
 import type { ProfileData } from "@/content/site";
 import { SocialIcon } from "./icons";
+import { BrandMark } from "./BrandMark";
 
 export default function Sidebar({
   profile: PROFILE,
@@ -10,32 +10,22 @@ export default function Sidebar({
 }) {
   return (
     <aside
-      aria-label="About Victor"
+      aria-label={`About ${PROFILE.name}`}
       className="hidden lg:flex fixed left-0 top-0 z-30 h-screen w-[280px] flex-col justify-between gap-6 overflow-y-auto border-r border-border bg-bg-elevated p-7"
     >
       <div>
-        {/* Brand logo (optional) */}
-        {PROFILE.logo && (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={PROFILE.logo}
-            alt={`${PROFILE.name} logo`}
-            className="mx-auto mb-6 h-10 w-auto max-w-[180px] object-contain"
-          />
-        )}
-
-        {/* Identity */}
+        {/* Identity: uploaded logo when set, otherwise the built-in mark */}
         <div className="flex flex-col items-center text-center">
-          <div className="relative h-28 w-28 overflow-hidden rounded-2xl ring-2 ring-accent/40">
-            <Image
-              src={PROFILE.headshot}
-              alt={PROFILE.name}
-              fill
-              priority
-              sizes="112px"
-              className="object-cover"
+          {PROFILE.logo ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={PROFILE.logo}
+              alt={`${PROFILE.name} logo`}
+              className="h-24 w-auto max-w-[180px] object-contain"
             />
-          </div>
+          ) : (
+            <BrandMark className="h-24 w-24" />
+          )}
           {/* h2, not h1 — the Hero headline is the page's single h1 */}
           <h2 className="mt-5 font-display text-2xl font-bold tracking-tight">
             {PROFILE.name}
@@ -65,7 +55,7 @@ export default function Sidebar({
             <span>
               {PROFILE.location}
               <span className="mt-1 block text-xs">
-                Working worldwide · WAT (UTC+1)
+                Remote across Canada · Pacific to Atlantic
               </span>
             </span>
           </li>

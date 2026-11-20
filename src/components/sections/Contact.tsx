@@ -44,7 +44,7 @@ export default function Contact({
         const response = await res.json();
         throw new Error(
           response.error ||
-            "Your message could not be sent. Please email me or use WhatsApp.",
+            "Your message could not be sent. Please email us or use WhatsApp.",
         );
       }
       setStatus("sent");
@@ -54,7 +54,7 @@ export default function Contact({
       setError(
         err instanceof Error
           ? err.message
-          : "Your message could not be sent. Please email me or use WhatsApp.",
+          : "Your message could not be sent. Please email us or use WhatsApp.",
       );
     }
   }
@@ -87,7 +87,7 @@ export default function Contact({
               </h3>
               <ol className="mt-5 space-y-4 text-sm text-muted">
                 <li>
-                  <span className="mr-3 text-accent">01</span>I review your
+                  <span className="mr-3 text-accent">01</span>We review your
                   brief and ask any useful follow-up questions.
                 </li>
                 <li>
@@ -139,7 +139,7 @@ export default function Contact({
                 Your brief is on its way.
               </h3>
               <p className="mt-3 text-sm leading-relaxed text-muted">
-                Thanks for getting in touch. I&apos;ll review your message and
+                Thanks for getting in touch. we&apos;ll review your message and
                 reply to the email address you provided.
               </p>
               <button
@@ -191,7 +191,7 @@ export default function Contact({
                 </label>
               </div>
               <label className={label}>
-                What can I help you with? <span className="text-muted">*</span>
+                What can we help you with? <span className="text-muted">*</span>
                 <select
                   name="projectType"
                   required
@@ -258,7 +258,7 @@ export default function Contact({
                     href={`mailto:${profile.email}`}
                     className="mt-2 inline-block underline"
                   >
-                    Email Victor directly
+                    Email us directly
                   </a>
                 </div>
               )}

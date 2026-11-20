@@ -61,7 +61,7 @@ export default function PageShell({
             Have something like this to build?
           </h2>
           <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-            Tell me what the system has to do and who uses it, and you get a
+            Tell us what you need it to do and who uses it, and you get a
             fixed scope, a timeline and a price before anything starts.
           </p>
           <Link

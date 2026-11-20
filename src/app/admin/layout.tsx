@@ -5,7 +5,7 @@ import { RESOURCES } from "./config";
 import { signOut } from "./actions";
 
 export const metadata = {
-  title: "Admin | Victor Abah",
+  title: "Admin | Oasis North Digital",
   robots: { index: false, follow: false },
 };
 
@@ -47,7 +47,7 @@ export default async function AdminLayout({
       <aside className="border-b border-border bg-bg-elevated p-5 lg:sticky lg:top-0 lg:h-screen lg:border-b-0 lg:border-r">
         <div className="mb-6 flex items-center justify-between">
           <Link href="/admin" className="font-display text-lg font-bold">
-            Victor<span className="text-accent">.</span> Admin
+            Oasis North<span className="text-accent">.</span> Admin
           </Link>
         </div>
         <nav className="flex flex-wrap gap-1.5 lg:flex-col">

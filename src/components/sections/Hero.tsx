@@ -28,9 +28,9 @@ export default function Hero({
         <div className="mb-9 hidden flex-wrap items-center gap-3 text-xs text-muted sm:flex">
           <span className="flex items-center gap-2 rounded-full border border-border bg-bg-card px-3 py-2">
             <Globe2 className="h-3.5 w-3.5 text-accent" /> {profile.location} ·
-            Working worldwide
+            Serving businesses nationwide
           </span>
-          <span>Design. Development. Follow-through.</span>
+          <span>Websites. Apps. Automation.</span>
         </div>
         <div className="grid items-center gap-12 xl:grid-cols-[1.15fr_0.85fr] xl:gap-9">
           <div>
@@ -57,7 +57,7 @@ export default function Hero({
               </a>
             </div>
             <p className="mt-5 text-xs leading-relaxed text-muted">
-              A website, a business app, or a development partner for your team.
+              A website, a custom app, or automation that gives your team hours back every week.
             </p>
           </div>
           {project?.image && (

@@ -27,8 +27,7 @@ export default function Footer({ profile: PROFILE }: { profile: ProfileData }) {
 
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-muted">
-          © {new Date().getFullYear()} {PROFILE.name}. Designed &amp; built
-          with care.
+          © {new Date().getFullYear()} {PROFILE.name}. Proudly built in Canada.
         </p>
         <div className="flex gap-3">
           {PROFILE.socials.map((s) => (
